@@ -16,8 +16,6 @@
 // форми використовуй властивість elements.
 // Виведи об'єкт із введеними даними в консоль і
 // очисти значення полів форми методом reset.
-// document.body.style.backgroundColor = "#232931";
-// document.body.style.color = "#eeeeee";
 
 const loginForm = document.querySelector(".login-form");
 
@@ -26,9 +24,6 @@ loginForm.addEventListener("submit", handleFormSubmit);
 function handleFormSubmit(e) {
   e.preventDefault();
   const { email, password } = e.currentTarget.elements;
-  // const {
-  //   elements: { email, password },
-  // } = e.currentTarget;
 
   if (!email.value.trim() || !password.value.trim()) {
     return alert("Please fill in all the fields!");
