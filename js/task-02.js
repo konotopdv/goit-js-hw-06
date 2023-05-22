@@ -16,7 +16,7 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-const ulEL = document.querySelector("#ingredients");
+const ingredientsEL = document.querySelector("#ingredients");
 const li1El = document.createElement("li");
 li1El.classList.add("item");
 li1El.textContent = "Potatoes";
@@ -41,5 +41,5 @@ const li6El = document.createElement("li");
 li6El.classList.add("item");
 li6El.textContent = "Condiments";
 console.log(li6El);
-ulEL.append(li1El, li2El, li3El, li4El, li5El, li6El);
-console.log(ulEl);
+ingredientsEL.append(li1El, li2El, li3El, li4El, li5El, li6El);
+console.log(ingredientsEL);

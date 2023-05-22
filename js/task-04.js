@@ -22,5 +22,6 @@ inkrBtn.addEventListener("click", (event) => {
 });
 
 dekrBtn.addEventListener("click", (event) => {
+  valueEl -= 1;
   counterValue.innerText = valueEl;
 });
